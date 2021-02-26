@@ -1,0 +1,348 @@
+
+
+kafka-console-producer.sh --bootstrap-server dlake-cluster-kafka-bootstrap-abc.apps.northers.os.fyre.ibm.com:443 --producer.config kafka-sasl-ssl.conf --topic dlake-topic
+
+
+IBMJSSE2 will not allow protocol SSLv3 per com.ibm.jsse2.disableSSLv3 set to TRUE or default
+IBMJSSEProvider2 Build-Level: -20170331
+Installed Providers = 
+	IBMJGSSProvider
+	SUN
+	IBMJCE
+	IBMJSSE2
+	IBMCertPath
+	IBMSASL
+	IBMXMLCRYPTO
+	IBMXMLEnc
+	IBMSPNEGO
+adding as trusted cert:
+  Subject: CN=cluster-ca v0, O=io.strimzi
+  Issuer:  CN=cluster-ca v0, O=io.strimzi
+  Algorithm: RSA; Serial number: 0xf5de74ccd4b136a9
+  Valid from Thu Feb 25 17:44:02 AST 2021 until Fri Feb 25 17:44:02 AST 2022
+
+SSLContextImpl:  Using X509ExtendedKeyManager com.ibm.jsse2.ax
+SSLContextImpl:  Using X509TrustManager com.ibm.jsse2.aB
+JsseJCE:  Using SecureRandom IBMSecureRandom from provider IBMJCE version 1.8
+trigger seeding of SecureRandom
+done seeding SecureRandom
+>IBMJSSE2 will enable CBC protection
+Using SSLEngineImpl.
+JsseJCE:  Using SecureRandom IBMSecureRandom from provider IBMJCE version 1.8
+JsseJCE:  Using signature SHA1withECDSA from provider TBD via init 
+JsseJCE:  Using signature NONEwithECDSA from provider TBD via init 
+JsseJCE:  Using KeyAgreement ECDH from provider IBMJCE version 1.8
+JsseJCE:  Using KeyFactory EC from provider IBMJCE version 1.8
+JsseJCE:  Using KeyPairGenerator EC from provider TBD via init 
+jdk.tls.client.protocols is defined as null
+SSLv3 protocol was requested but was not enabled
+SSLv3 protocol was requested but was not enabled
+SUPPORTED: [TLSv1, TLSv1.1, TLSv1.2]
+SERVER_DEFAULT: [TLSv1, TLSv1.1, TLSv1.2]
+CLIENT_DEFAULT: [TLSv1, TLSv1.1, TLSv1.2]
+IBMJSSE2 will allow RFC 5746 renegotiation per com.ibm.jsse2.renegotiate set to none or default
+IBMJSSE2 will not require renegotiation indicator during initial handshake per com.ibm.jsse2.renegotiation.indicator set to OPTIONAL or default taken
+IBMJSSE2 will not perform identity checking against the peer cert check during renegotiation per com.ibm.jsse2.renegotiation.peer.cert.check set to OFF or default
+IBMJSSE2 will allow client initiated renegotiation per jdk.tls.rejectClientInitiatedRenegotiation set to FALSE or default
+IBMJSSE2 will not allow unsafe server certificate change during renegotiation per jdk.tls.allowUnsafeServerCertChange set to FALSE or default
+
+Is initial handshake: true
+JsseJCE:  Using AlgorithmParameters EC from provider IBMJCE version 1.8
+JsseJCE:  Using AlgorithmParameters EC from provider IBMJCE version 1.8
+JsseJCE:  Using AlgorithmParameters EC from provider IBMJCE version 1.8
+JsseJCE:  Using AlgorithmParameters EC from provider IBMJCE version 1.8
+%% No cached client session
+*** ClientHello, TLSv1.2
+RandomCookie:  GMT: 1614298340 bytes = { 224, 202, 78, 59, 203, 89, 190, 237, 176, 80, 48, 81, 105, 123, 227, 16, 1, 18, 159, 65, 47, 184, 160, 239, 179, 186, 102, 3 }
+Session ID:  {}
+Cipher Suites: [TLS_EMPTY_RENEGOTIATION_INFO_SCSV, SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256, SSL_RSA_WITH_AES_128_CBC_SHA256, SSL_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, SSL_ECDH_RSA_WITH_AES_128_CBC_SHA256, SSL_DHE_RSA_WITH_AES_128_CBC_SHA256, SSL_DHE_DSS_WITH_AES_128_CBC_SHA256, SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA, SSL_RSA_WITH_AES_128_CBC_SHA, SSL_ECDH_ECDSA_WITH_AES_128_CBC_SHA, SSL_ECDH_RSA_WITH_AES_128_CBC_SHA, SSL_DHE_RSA_WITH_AES_128_CBC_SHA, SSL_DHE_DSS_WITH_AES_128_CBC_SHA, SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256, SSL_RSA_WITH_AES_128_GCM_SHA256, SSL_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, SSL_ECDH_RSA_WITH_AES_128_GCM_SHA256, SSL_DHE_RSA_WITH_AES_128_GCM_SHA256, SSL_DHE_DSS_WITH_AES_128_GCM_SHA256]
+Compression Methods:  { 0 }
+Extension elliptic_curves, curve names: {secp256r1, secp384r1, secp521r1, secp256k1}
+Extension ec_point_formats, formats: [uncompressed]
+Extension signature_algorithms, signature_algorithms: SHA512withECDSA, SHA512withRSA, SHA384withECDSA, SHA384withRSA, SHA256withECDSA, SHA256withRSA, SHA224withECDSA, SHA224withRSA, SHA1withECDSA, SHA1withRSA, SHA256withDSA, SHA1withDSA
+Extension server_name, server_name: [type=host_name (0), value=dlake-cluster-kafka-bootstrap-abc.apps.northers.os.fyre.ibm.com]
+***
+kafka-producer-network-thread | console-producer, WRITE: TLSv1.2 Handshake, length = 211
+kafka-producer-network-thread | console-producer, READ: TLSv1.2 Handshake, length = 2675
+*** ServerHello, TLSv1.2
+RandomCookie:  GMT: -1673706223 bytes = { 233, 90, 129, 75, 110, 14, 56, 231, 142, 112, 144, 5, 193, 31, 157, 32, 219, 79, 216, 252, 130, 147, 6, 9, 208, 120, 105, 143 }
+Session ID:  {160, 239, 140, 88, 8, 5, 86, 24, 95, 189, 67, 177, 113, 187, 44, 226, 220, 91, 181, 205, 202, 112, 44, 55, 106, 39, 180, 205, 45, 203, 179, 120}
+Cipher Suite: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+Compression Method: 0
+Extension renegotiation_info, ri_length: 0, ri_connection_data: { null }
+***
+JsseJCE:  Using MessageDigest SHA-256 from provider SUN version 1.8
+%% Initialized:  [Session-1, SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256]
+** SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+*** Certificate chain
+chain [0] = [
+[
+  Version: V3
+  Subject: CN=dlake-cluster-kafka, O=io.strimzi
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  IBMJCE RSA Public Key:
+modulus:
+26789725988654171316918529783767096749012925944687037720835196198222056859742699412278895218144007483178415268066531970382549876946413259261192574754885801855039036791622661130942348853685401960895596860796365933942453001984694635283009455275374813530475230002181028618101556143470657906647629040322126737574131362254062244464050213710268464550165121616754255578769838092449475963765329263049698341454142423657099585116799341690534592942053312577560768210020726660285554224473556889339598080683222475176699493109162358703157433077928915026009316922939858452454097940918626482890001659040880211233953348999721353847967
+public exponent:
+65537
+
+  Validity: [From: Thu Feb 25 17:44:33 AST 2021,
+               To: Fri Feb 25 17:44:33 AST 2022]
+  Issuer: CN=cluster-ca v0, O=io.strimzi
+  SerialNumber: [12683692439931089416]
+
+Certificate Extensions: 1
+[1]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+[DNSName: dlake-cluster-kafka-brokers.abc.svc, DNSName: dlake-cluster-kafka-brokers.abc.svc.cluster.local, DNSName: dlake-cluster-kafka-brokers, DNSName: dlake-cluster-kafka-brokers.abc, DNSName: dlake-cluster-kafka-1.dlake-cluster-kafka-brokers.abc.svc.cluster.local, DNSName: dlake-cluster-kafka-bootstrap.abc.svc, DNSName: dlake-cluster-kafka-bootstrap.abc.svc.cluster.local, DNSName: dlake-cluster-kafka-1-abc.apps.northers.os.fyre.ibm.com, DNSName: dlake-cluster-kafka-bootstrap, DNSName: dlake-cluster-kafka-bootstrap-abc.apps.northers.os.fyre.ibm.com, DNSName: dlake-cluster-kafka-bootstrap.abc, DNSName: dlake-cluster-kafka-1.dlake-cluster-kafka-brokers.abc.svc]]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 8b a6 9b f7 63 8f eb 90  01 6e 8c 36 06 f0 53 7f  ....c....n.6..S.
+0010: 6f 8b 75 df 2e f1 3c 34  0c c7 08 a7 5d 2e 9e f8  o.u....4........
+0020: 2c d2 75 5f 9b 06 f5 2f  b4 08 ae d6 13 e6 e0 9c  ..u.............
+0030: 10 0a c0 4f a7 80 ff 7d  1c fa d0 8b 71 98 57 a8  ...O........q.W.
+0040: 25 69 4d 0f 8d 74 d0 5b  16 57 fe 6e 28 59 7e b2  .iM..t...W.n.Y..
+0050: e5 0e be 82 f9 88 e1 76  ff c1 aa 43 ac 3e c2 0f  .......v...C....
+0060: d6 34 12 45 02 db cf 8f  c9 d2 e0 b7 32 f5 c8 86  .4.E........2...
+0070: 66 ac ea d9 6e fa 9f 06  f3 eb cd 0d 9c 1c 24 16  f...n...........
+0080: 63 73 fb eb 22 84 0a 29  bb c9 9c f5 49 bd d3 85  cs..........I...
+0090: 70 f1 b8 de 75 ef d2 fb  dc 26 c4 4d e9 37 05 39  p...u......M.7.9
+00a0: dc 66 32 9c 45 f1 e8 41  95 dd 57 fa 84 c8 62 95  .f2.E..A..W...b.
+00b0: 18 cb 6a 20 a6 35 a7 81  0f 66 1b 3c ff 54 99 9a  ..j..5...f...T..
+00c0: 02 f2 44 5e e0 55 fd 2e  01 4b fb 28 46 83 22 7b  ..D..U...K..F...
+00d0: e5 43 16 83 02 9b 98 fa  4d 46 2f 18 86 fa 5c 7d  .C......MF......
+00e0: cd 60 9b 06 b6 58 72 9f  7c 7f d1 c9 d1 96 3f b3  .....Xr.........
+00f0: ad 3b f8 9e 01 6b c2 da  0f 73 ca cd 80 bb a7 8e  .....k...s......
+
+]
+chain [1] = [
+[
+  Version: V3
+  Subject: CN=cluster-ca v0, O=io.strimzi
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  IBMJCE RSA Public Key:
+modulus:
+18799543973386044014293063026154785628281426341447952449254235436197630134098181809726503444591079853576970355251623763324900286340061664051493251946077444620428585420424382613376876411380932092999790708079821018757334590874702937656160958325519243950232451535393406480147025100899377867922318044514758427751665545513826527547455283450214082330555935753251402742532757930101322651452761921698013332914924569569410587063980186314339159094765430643113511744211116034647003919066528349911328632027179011938667391439149217468928047533860442032595969138719689835491324144357482437786913502933788434792889268813279716998009
+public exponent:
+65537
+
+  Validity: [From: Thu Feb 25 17:44:02 AST 2021,
+               To: Fri Feb 25 17:44:02 AST 2022]
+  Issuer: CN=cluster-ca v0, O=io.strimzi
+  SerialNumber: [17716726407212644009]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: f9 63 e7 f7 6d 9c ea 8a  a4 d0 e8 01 bd b4 ea 2d  .c..m...........
+0010: 10 83 74 b0                                        ..t.
+]
+]
+
+[2]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: f9 63 e7 f7 6d 9c ea 8a  a4 d0 e8 01 bd b4 ea 2d  .c..m...........
+0010: 10 83 74 b0                                        ..t.
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+CA:true
+PathLen:2147483647
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 89 97 64 5a cb f7 19 64  70 e2 2c 77 2c d1 d5 bb  ..dZ...dp..w....
+0010: bc d2 9b b4 64 21 4a 60  18 9f 17 11 51 83 79 ec  ....d.J.....Q.y.
+0020: c7 ea 9c 1b f9 84 e2 a7  99 a8 42 e2 76 56 2f e3  ..........B.vV..
+0030: 46 48 50 f4 1b 21 ed 26  df 56 33 41 53 27 98 ef  FHP......V3AS...
+0040: a3 4a 9e 07 ac 20 e4 ab  e0 01 4d 9f 68 07 98 bf  .J........M.h...
+0050: a8 b7 fb e9 d7 ce 12 de  66 9b 87 51 9e 44 7a 90  ........f..Q.Dz.
+0060: 2b 1d ce 8e 23 47 88 0a  2b e4 b2 c3 5f 9a 88 a1  .....G..........
+0070: 20 69 ed 5a 5f 1b 72 c1  9f cd 50 0f f5 6f 16 8d  .i.Z..r...P..o..
+0080: 84 38 03 57 38 9c a4 d0  3a d7 c0 94 18 ca e1 e8  .8.W8...........
+0090: fc 4c 61 a0 ed 50 d5 d7  fe 2c 54 64 f2 4f 3e fa  .La..P....Td.O..
+00a0: ba b0 5b c8 c0 b8 f0 31  24 d2 a7 61 93 01 0e 93  .......1...a....
+00b0: d7 89 32 0a f1 29 43 e4  7e 7d 1c 66 9a bf 1d 09  ..2...C....f....
+00c0: 10 30 71 62 83 17 d2 d5  58 47 8a db 1a 1e c7 9b  .0qb....XG......
+00d0: 85 9a 13 21 a2 03 21 a9  88 25 d8 b7 5b d6 f4 68  ...............h
+00e0: 32 e4 2f 21 fc 5f 52 0d  37 74 83 9f 9c 39 89 f3  2.....R.7t...9..
+00f0: 33 d8 ba ce e6 f8 3c c4  e7 87 b6 f0 95 78 35 4d  3............x5M
+
+]
+***
+Found trusted certificate:
+[
+[
+  Version: V3
+  Subject: CN=cluster-ca v0, O=io.strimzi
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  IBMJCE RSA Public Key:
+modulus:
+18799543973386044014293063026154785628281426341447952449254235436197630134098181809726503444591079853576970355251623763324900286340061664051493251946077444620428585420424382613376876411380932092999790708079821018757334590874702937656160958325519243950232451535393406480147025100899377867922318044514758427751665545513826527547455283450214082330555935753251402742532757930101322651452761921698013332914924569569410587063980186314339159094765430643113511744211116034647003919066528349911328632027179011938667391439149217468928047533860442032595969138719689835491324144357482437786913502933788434792889268813279716998009
+public exponent:
+65537
+
+  Validity: [From: Thu Feb 25 17:44:02 AST 2021,
+               To: Fri Feb 25 17:44:02 AST 2022]
+  Issuer: CN=cluster-ca v0, O=io.strimzi
+  SerialNumber: [    f5de74cc d4b136a9]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: F9 63 E7 F7 6D 9C EA 8A   A4 D0 E8 01 BD B4 EA 2D  .c..m..........-
+0010: 10 83 74 B0                                        ..t.
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: F9 63 E7 F7 6D 9C EA 8A   A4 D0 E8 01 BD B4 EA 2D  .c..m..........-
+0010: 10 83 74 B0                                        ..t.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 89 97 64 5A CB F7 19 64   70 E2 2C 77 2C D1 D5 BB  ..dZ...dp.,w,...
+0010: BC D2 9B B4 64 21 4A 60   18 9F 17 11 51 83 79 EC  ....d!J`....Q.y.
+0020: C7 EA 9C 1B F9 84 E2 A7   99 A8 42 E2 76 56 2F E3  ..........B.vV/.
+0030: 46 48 50 F4 1B 21 ED 26   DF 56 33 41 53 27 98 EF  FHP..!.&.V3AS'..
+0040: A3 4A 9E 07 AC 20 E4 AB   E0 01 4D 9F 68 07 98 BF  .J... ....M.h...
+0050: A8 B7 FB E9 D7 CE 12 DE   66 9B 87 51 9E 44 7A 90  ........f..Q.Dz.
+0060: 2B 1D CE 8E 23 47 88 0A   2B E4 B2 C3 5F 9A 88 A1  +...#G..+..._...
+0070: 20 69 ED 5A 5F 1B 72 C1   9F CD 50 0F F5 6F 16 8D   i.Z_.r...P..o..
+0080: 84 38 03 57 38 9C A4 D0   3A D7 C0 94 18 CA E1 E8  .8.W8...:.......
+0090: FC 4C 61 A0 ED 50 D5 D7   FE 2C 54 64 F2 4F 3E FA  .La..P...,Td.O>.
+00A0: BA B0 5B C8 C0 B8 F0 31   24 D2 A7 61 93 01 0E 93  ..[....1$..a....
+00B0: D7 89 32 0A F1 29 43 E4   7E 7D 1C 66 9A BF 1D 09  ..2..)C....f....
+00C0: 10 30 71 62 83 17 D2 D5   58 47 8A DB 1A 1E C7 9B  .0qb....XG......
+00D0: 85 9A 13 21 A2 03 21 A9   88 25 D8 B7 5B D6 F4 68  ...!..!..%..[..h
+00E0: 32 E4 2F 21 FC 5F 52 0D   37 74 83 9F 9C 39 89 F3  2./!._R.7t...9..
+00F0: 33 D8 BA CE E6 F8 3C C4   E7 87 B6 F0 95 78 35 4D  3.....<......x5M
+
+]
+JsseJCE:  Using KeyFactory EC from provider IBMJCE version 1.8
+JsseJCE:  Using signature SHA512withRSA from provider TBD via init 
+Signatures:  Using signature RSA from provider from initVerifyIBMJCE version 1.8
+*** ECDH ServerKeyExchange
+Signature Algorithm SHA512withRSA
+Server key: algorithm = EC
+	curve: 
+		a: 115792089210356248762697446949407573530086143415290314195533631308867097853948
+		b: 41058363725152142129326129780047268409114441015993725554835256314039467401291
+		size: 256
+	generator: 
+		[48439561293906451759052585252797914202762949526041747995844080717082404635286,36134250956749795798585127919587881956611106672985015071877198253568414405109]
+	order: 
+		115792089210356248762697446949407573529996955224135760342422259061068512044369
+	cofactor: 1
+, unparsed keybits = 
+0000: 04 10 e3 19 6d fb 93 4a  1d 70 2e d5 ad 0c 0c d1  ....m..J.p......
+0010: 45 03 14 06 11 c1 e6 7c  52 8b d2 43 c3 36 ca 38  E.......R..C.6.8
+0020: 24 15 88 07 35 e4 4d bb  c2 63 4c 9a 4f e1 40 9e  ....5.M..cL.O...
+0030: 16 9f f1 c9 dd 3c 6f 60  7b 73 7a 9f fe b2 38 65  ......o..sz...8e
+0040: ca                                                 .
+
+JsseJCE:  Using KeyPairGenerator EC from provider TBD via init 
+ECDHCrypt:  ECDH KeyPairGenerator  from provider from init IBMJCE version 1.8
+*** CertificateRequest
+Cert Types: ECDSA, RSA, DSS
+Supported Signature Algorithms: SHA256withECDSA, SHA384withECDSA, SHA512withECDSA, Unknown (hash:0x8, signature:0x4), Unknown (hash:0x8, signature:0x5), Unknown (hash:0x8, signature:0x6), Unknown (hash:0x8, signature:0x9), Unknown (hash:0x8, signature:0xa), Unknown (hash:0x8, signature:0xb), SHA256withRSA, SHA384withRSA, SHA512withRSA, SHA256withDSA, SHA224withECDSA, SHA224withRSA, Unknown (hash:0x3, signature:0x2), SHA1withECDSA, SHA1withRSA, SHA1withDSA
+Cert Authorities:
+<CN=clients-ca v0, O=io.strimzi>
+*** ServerHelloDone
+ClientHandshaker: KeyManager com.ibm.jsse2.ax
+Warning: no suitable certificate found - continuing without client authentication
+*** Certificate chain
+***
+*** ECDHClientKeyExchange
+ECDH Public value:  { 4, 70, 130, 47, 69, 140, 190, 3, 220, 19, 132, 93, 120, 19, 174, 28, 212, 7, 222, 140, 37, 134, 243, 133, 185, 163, 51, 114, 112, 53, 228, 203, 145, 213, 147, 214, 92, 207, 248, 172, 31, 210, 51, 76, 201, 71, 157, 37, 204, 28, 189, 101, 190, 9, 150, 15, 202, 252, 178, 188, 92, 126, 187, 73, 26 }
+kafka-producer-network-thread | console-producer, WRITE: TLSv1.2 Handshake, length = 77
+JsseJCE:  Using KeyAgreement ECDH from provider IBMJCE version 1.8
+ECDHCrypt:  ECDH KeyAgreement  from provider from initIBMJCE version 1.8
+SESSION KEYGEN:
+PreMaster Secret:
+0000: ff a8 aa 25 ac 21 52 03  2b 47 2c dd 64 9e a7 88  ......R..G..d...
+0010: e6 a0 52 f8 ab 5f 63 d6  e2 70 47 85 9c 82 b3 98  ..R...c..pG.....
+
+javax.crypto.spec.SecretKeySpec@a19d886d
+JsseJCE:  Using KeyGenerator IbmTls12MasterSecret from provider TBD via init 
+JsseJCE:  Using KeyGenerator IbmTls12KeyMaterial from provider TBD via init 
+CONNECTION KEYGEN:
+Client Nonce:
+0000: 60 38 3d e4 e0 ca 4e 3b  cb 59 be ed b0 50 30 51  .8....N..Y...P0Q
+0010: 69 7b e3 10 01 12 9f 41  2f b8 a0 ef b3 ba 66 03  i......A......f.
+
+Server Nonce:
+0000: 9c 3d 45 11 e9 5a 81 4b  6e 0e 38 e7 8e 70 90 05  ..E..Z.Kn.8..p..
+0010: c1 1f 9d 20 db 4f d8 fc  82 93 06 09 d0 78 69 8f  .....O.......xi.
+
+Master Secret:
+0000: 3e 24 b3 af f6 73 10 24  97 0c e1 23 17 98 42 05  .....s........B.
+0010: a6 a4 31 09 ea 82 7e b0  dc e8 27 40 c5 fa fa 5b  ..1.............
+0020: 3c 97 10 3c c2 22 db f4  a2 11 6d 0e 07 f6 3f 55  ..........m....U
+
+Client MAC write Secret:
+0000: a2 1c 32 46 c1 bf 47 c9  10 f1 c6 91 a7 c5 f5 c2  ..2F..G.........
+0010: 75 38 4b f1 a9 f6 0a 21  54 3a ea 5b 07 90 3c 42  u8K.....T......B
+
+Server MAC write Secret:
+0000: 25 1b ce 66 b6 d8 eb 32  28 30 6b 0e bb 10 8f be  ...f...2.0k.....
+0010: 91 57 0e cc cf b7 4e 26  49 d2 b5 85 5a 22 78 89  .W....N.I...Z.x.
+
+Client write key:
+0000: 13 27 2e 2f 72 f5 73 7c  27 4b 36 16 ae d4 0f b4  ....r.s..K6.....
+
+Server write key:
+0000: 50 04 5f 66 bf 59 0e ac  9e 4d 3e 17 c0 d9 09 35  P..f.Y...M.....5
+
+... no IV derived for this protocol
+JsseJCE:  Using KeyGenerator IbmTls12Prf from provider TBD via init 
+HandshakeMessage:  TLS Keygenerator IbmTlsPrf  from provider from init IBMJCE version 1.8
+kafka-producer-network-thread | console-producer, WRITE: TLSv1.2 Change Cipher Spec, length = 1
+JsseJCE:  Using cipher AES/CBC/NoPadding from provider TBD via init 
+CipherBox:  Using cipher AES/CBC/NoPadding from provider from init IBMJCE version 1.8
+JsseJCE:  Using MAC HmacSHA256 from provider TBD via init 
+MAC:  Using MessageDigest HmacSHA256 from provider IBMJCE version 1.8
+*** Finished
+verify_data:  { 174, 132, 179, 89, 126, 243, 183, 123, 236, 20, 87, 120 }
+***
+kafka-producer-network-thread | console-producer, WRITE: TLSv1.2 Handshake, length = 80
+kafka-producer-network-thread | console-producer, READ: TLSv1.2 Handshake, length = 2675
+kafka-producer-network-thread | console-producer, fatal error: 80: problem unwrapping net record
+javax.net.ssl.SSLProtocolException: Handshake message sequence violation, 2
+%% Invalidated:  [Session-1, SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256]
+kafka-producer-network-thread | console-producer, SEND TLSv1.2 ALERT:  fatal, description = internal_error
+kafka-producer-network-thread | console-producer, WRITE: TLSv1.2 Alert, length = 64
+kafka-producer-network-thread | console-producer, called closeOutbound()
+kafka-producer-network-thread | console-producer, closeOutboundInternal()
+kafka-producer-network-thread | console-producer, called closeInbound()
+kafka-producer-network-thread | console-producer, closeInboundInternal()
+kafka-producer-network-thread | console-producer, called closeOutbound()
+kafka-producer-network-thread | console-producer, closeOutboundInternal()
+[2021-02-25 20:16:36,723] ERROR [Producer clientId=console-producer] Connection to node -1 (dlake-cluster-kafka-bootstrap-abc.apps.northers.os.fyre.ibm.com/9.30.116.162:443) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient)
+[2021-02-25 20:16:36,724] WARN [Producer clientId=console-producer] Bootstrap broker dlake-cluster-kafka-bootstrap-abc.apps.northers.os.fyre.ibm.com:443 (id: -1 rack: null) disconnected (org.apache.kafka.clients.NetworkClient)
+Using SSLEngineImpl.
+
+
